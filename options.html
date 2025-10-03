@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>dirdocs • Settings</title>
+    <link rel="stylesheet" href="popup.css" />
+    <style>
+      body { min-width: 560px; }
+      .kb { color: var(--jb-purple); }
+      .kbd {
+        border: 1px solid var(--jb-border);
+        border-bottom-width: 2px;
+        padding: 2px 6px;
+        border-radius: 6px;
+        background: #111;
+        color: var(--jb-yellow);
+      }
+      /* Jellybeans link theming */
+      :root {
+        --jb-link:        var(--jb-accent);
+        --jb-link-hover:  #b8d7ee;
+        --jb-link-active: var(--jb-yellow);
+        --jb-link-visited:#a8cfe6;
+      }
+
+      body.jb-root a {
+        color: var(--jb-link);
+        text-decoration: none;
+        font-weight: 600;
+        text-underline-offset: 2px;
+      }
+
+      body.jb-root a:hover {
+        color: var(--jb-link-hover);
+        text-decoration: underline;
+      }
+
+      body.jb-root a:active {
+        color: var(--jb-link-active);
+      }
+
+      body.jb-root a:visited {
+        color: var(--jb-link-visited);
+      }
+    </style>
+  </head>
+  <body class="jb-root">
+    <header class="jb-header">
+      <div class="jb-title">dirdocs chrome — Settings</div>
+      <div class="jb-subtle">Made with ❤️ in Philadelphia</div>
+    </header>
+
+    <main class="jb-main">
+      <section class="jb-card">
+        <h2 class="jb-h2">About</h2>
+        <p class="jb-muted">
+          This extension swaps GitHub directory commit messages with
+          descriptions from <code>.dirdocs.nuon</code> when available.
+        </p>
+        <p class="jb-muted">
+          Use the popup on a repo page to enable/disable and load mappings per repo.
+        </p>
+      </section>
+
+      <section class="jb-card">
+        <h2 class="jb-h2">Tips</h2>
+        <ul class="jb-muted">
+          <li>Upload a local <code>.dirdocs.nuon</code> to override.</li>
+          <li>“Fetch from repo” reads the default branch <span class="kb">(HEAD)</span>.</li>
+          <li>Hover any replaced message to see full text in a custom tooltip.</li>
+          <li>Generate a .dirdocs.nuon file using <a href="https://github.com/graves/dirdocs">dirdocs</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="jb-footer">
+      <span class="jb-subtle">dirdocs © Thomas Gentry</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+:root {
+  /* Jellybeans-ish palette */
+  --jb-bg: #151515;
+  --jb-panel: #1b1b1b;
+  --jb-border: #2a2a2a;
+  --jb-fg: #e8e8d3;
+  --jb-muted: #9e9e9e;
+  --jb-accent: #8fbfdc;   /* cyan-ish */
+  --jb-warn: #cf6a4c;     /* red/orange */
+  --jb-green: #99ad6a;
+  --jb-yellow: #fad07a;
+  --jb-purple: #c6b6ee;
+  --jb-cyan: #8fbfdc;
+}
+
+* { box-sizing: border-box; }
+
+body.jb-root {
+  margin: 0;
+  min-width: 360px;
+  color: var(--jb-fg);
+  background: linear-gradient(180deg, #131313 0%, #151515 60%, #171717 100%);
+  font: 13px/1.5 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.jb-header, .jb-footer {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--jb-border);
+  background: #141414;
+}
+.jb-footer { border-top: 1px solid var(--jb-border); border-bottom: none; }
+
+.jb-title {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.jb-subtle { color: var(--jb-muted); }
+
+.jb-main { padding: 12px; display: grid; gap: 12px; }
+
+.jb-card {
+  background: var(--jb-panel);
+  border: 1px solid var(--jb-border);
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+.jb-h2 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--jb-cyan);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.jb-muted { color: var(--jb-muted); margin: 0 0 10px 0; }
+code { color: var(--jb-yellow); }
+
+.row { display: flex; align-items: center; }
+.row.between { justify-content: space-between; }
+.row.gap { gap: 8px; flex-wrap: wrap; }
+
+.jb-chip {
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--jb-border);
+  background: #202020;
+  color: var(--jb-yellow);
+}
+
+.jb-btn {
+  appearance: none;
+  border: 1px solid var(--jb-border);
+  background: #222;
+  color: var(--jb-fg);
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .06s ease, background .12s ease, border-color .12s ease;
+}
+.jb-btn:hover { background: #252525; border-color: #2f2f2f; }
+.jb-btn:active { transform: translateY(1px) scale(0.997); }
+
+.jb-btn-ghost {
+  background: transparent;
+  color: var(--jb-cyan);
+  border-color: #2b3c45;
+}
+.jb-btn-ghost:hover { background: rgba(143,191,220,.08); border-color: #3b5563; }
+
+.jb-btn-warn {
+  background: #2b1d1a;
+  color: var(--jb-warn);
+  border-color: #3b2520;
+}
+.jb-btn-warn:hover { background: #34231f; border-color: #4a2e28; }
+
+.jb-file {
+  border: 1px dashed #3a3a3a;
+  background: #181818;
+  color: var(--jb-fg);
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.jb-status {
+  margin-top: 8px;
+  color: var(--jb-green);
+  min-height: 1.2em;
+}
+
+/* Toggle */
+.jb-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.jb-toggle input { display: none; }
+.jb-toggle .slider {
+  width: 44px; height: 24px;
+  background: #2a2a2a;
+  border: 1px solid var(--jb-border);
+  border-radius: 999px;
+  position: relative;
+  transition: background .12s ease, border-color .12s ease;
+}
+.jb-toggle .slider::after {
+  content: "";
+  position: absolute; top: 50%; left: 3px;
+  width: 18px; height: 18px;
+  transform: translateY(-50%);
+  background: #101010;
+  border: 1px solid #333;
+  border-radius: 999px;
+  transition: left .12s ease, background .12s ease;
+}
+.jb-toggle input:checked + .slider {
+  background: rgba(143,191,220,.2);
+  border-color: #4b6b7c;
+}
+.jb-toggle input:checked + .slider::after {
+  left: 23px; background: #1a2a32; border-color: #4b6b7c;
+}
+.jb-toggle .label { color: var(--jb-fg); }
+
+/* ---- Link theming (Jellybeans) ---- */
+:root {
+  --jb-link:        var(--jb-accent);  /* cyan-ish */
+  --jb-link-hover:  #b8d7ee;           /* brighter cyan */
+  --jb-link-active: var(--jb-yellow);  /* chalk yellow */
+  --jb-link-visited:#a8cfe6;           /* softer cyan */
+}
+
+/* Default anchors in the settings UI */
+body.jb-root a {
+  color: var(--jb-link);
+  text-decoration: none;
+  font-weight: 600;
+  text-underline-offset: 2px;
+}
+body.jb-root a:hover {
+  color: var(--jb-link-hover);
+  text-decoration: underline;
+}
+body.jb-root a:active {
+  color: var(--jb-link-active);
+}
+body.jb-root a:visited {
+  color: var(--jb-link-visited);
+}
+
+/* If you have link-like buttons/text (optional utility) */
+.jb-link {
+  color: var(--jb-link);
+  cursor: pointer;
+}
+.jb-link:hover { color: var(--jb-link-hover); text-decoration: underline; }
+.jb-link:active { color: var(--jb-link-active); }
+
+/* Ensure links inside cards inherit the same treatment */
+.jb-card a { color: var(--jb-link); }
+.jb-card a:hover { color: var(--jb-link-hover); }

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>dirdocs</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body class="jb-root">
+    <header class="jb-header">
+      <div class="jb-title">dirdocs chrome</div>
+      <div id="repoLabel" class="jb-subtle">repo: …</div>
+    </header>
+
+    <main class="jb-main">
+      <section class="jb-card">
+        <div class="row between">
+          <label class="jb-toggle">
+            <input id="enabledToggle" type="checkbox" />
+            <span class="slider"></span>
+            <span class="label">Show dirdocs descriptions</span>
+          </label>
+          <div id="mappingCount" class="jb-chip">mappings: 0</div>
+        </div>
+      </section>
+
+      <section class="jb-card">
+        <h2 class="jb-h2">Load mapping</h2>
+        <p class="jb-muted">
+          Upload a local <code>.dirdocs.nu</code> / <code>.nuon</code> file (JSON/NUON),
+          or fetch from the repo’s default branch.
+        </p>
+
+        <div class="row gap">
+          <input id="fileInput" type="file" accept=".nu,.nuon,.json" class="jb-file" />
+          <button id="btnUseFile" class="jb-btn">Use uploaded file</button>
+          <button id="btnFetch" class="jb-btn jb-btn-ghost">Fetch from repo</button>
+        </div>
+
+        <div id="status" class="jb-status" aria-live="polite"></div>
+      </section>
+
+      <section class="jb-card">
+        <h2 class="jb-h2">Actions</h2>
+        <div class="row gap">
+          <button id="btnClear" class="jb-btn jb-btn-warn">Clear mapping</button>
+          <button id="btnRedraw" class="jb-btn">Redraw page</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="jb-footer">
+      <span class="jb-subtle">✨ Created by <a href="https://awfulsec.com" target="_blank">Thomas Gentry</a></span>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
