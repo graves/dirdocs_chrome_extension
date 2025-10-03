@@ -1,0 +1,182 @@
+{
+  "root": ".",
+  "updated_at": "2025-10-03T06:25:33.102718Z",
+  "entries": [
+    {
+      "kind": "file",
+      "name": "dirdocs_chrome_extension.zip",
+      "path": "dirdocs_chrome_extension.zip",
+      "hash": "4c6971d5938be90cad72cd1d61cf5b960597a064a40de4a02895103ff91d75c8",
+      "updated_at": "2025-10-03T06:25:21.238164Z",
+      "doc": {
+        "fileDescription": "Serves as the documentation archive for the dirdocs Chrome extension, providing instructions and setup details.",
+        "joyThisFileBrings": 8,
+        "personalityEmoji": "📚"
+      }
+    },
+    {
+      "kind": "file",
+      "name": "content.js",
+      "path": "content.js",
+      "hash": "7868f1ad11f19686c7c352a162ae5da8d3a6478b4e44f8adda609539af7697bf",
+      "updated_at": "2025-10-03T06:25:24.341613Z",
+      "doc": {
+        "fileDescription": "Enhances GitHub directory views by replacing commit messages with per-file descriptions from .dirdocs.nu files.",
+        "joyThisFileBrings": 8,
+        "personalityEmoji": "🦀"
+      }
+    },
+    {
+      "kind": "file",
+      "name": "popup.js",
+      "path": "popup.js",
+      "hash": "5e0f1461e9b6a7b6358b7655ccaf84e9bc7de4cd65fea6338c966dad8a1208ac",
+      "updated_at": "2025-10-03T06:24:23.278049Z",
+      "doc": {
+        "fileDescription": "Controls the UI popup for a Chrome extension to manage file mappings and repo settings.",
+        "joyThisFileBrings": 8,
+        "personalityEmoji": "🎨"
+      }
+    },
+    {
+      "kind": "dir",
+      "name": "icons",
+      "path": "icons",
+      "updated_at": "2025-10-03T06:25:33.102745Z",
+      "entries": [
+        {
+          "kind": "file",
+          "name": "icon-16.png",
+          "path": "icons/icon-16.png",
+          "hash": "65c20d62e33263ee4fa61186086260aaae18290bd1d88ab6aa6045c319abef3b",
+          "updated_at": "2025-10-03T06:24:52.409027Z",
+          "doc": {
+            "fileDescription": "Serves as a 16x16 pixel icon for the dirdocs Chrome extension.",
+            "joyThisFileBrings": 7,
+            "personalityEmoji": "🦀"
+          }
+        },
+        {
+          "kind": "file",
+          "name": "icon-32.png",
+          "path": "icons/icon-32.png",
+          "hash": "5a937448f2915f04c868ca98348d45a3218a0531009c15b6d7ff85bf1460dacb",
+          "updated_at": "2025-10-03T06:25:01.119853Z",
+          "doc": {
+            "fileDescription": "Serves as a 32x32 pixel icon for the dirdocs Chrome extension.",
+            "joyThisFileBrings": 8,
+            "personalityEmoji": "🎨"
+          }
+        },
+        {
+          "kind": "file",
+          "name": "icon-48.png",
+          "path": "icons/icon-48.png",
+          "hash": "1f09c5d77522b0cac02731f71442294d83bd9e6af504e8f611d7d412777340ef",
+          "updated_at": "2025-10-03T06:24:55.418494Z",
+          "doc": {
+            "fileDescription": "This png file is a symbolic representation of the visual branding in the dirdocs Chrome Extension.",
+            "joyThisFileBrings": 7,
+            "personalityEmoji": "🦀"
+          }
+        },
+        {
+          "kind": "file",
+          "name": "icon-128.png",
+          "path": "icons/icon-128.png",
+          "hash": "54737c06942370bfd66ed4ad04473f4224ead74c922ecd6c5eee27253a268f85",
+          "updated_at": "2025-10-03T06:24:58.371507Z",
+          "doc": {
+            "fileDescription": "Icons directory for the dirdocs Chrome extension.",
+            "joyThisFileBrings": 7,
+            "personalityEmoji": "🎨"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "file",
+      "name": "manifest.json",
+      "path": "manifest.json",
+      "hash": "47c3bfffbe37969a5a0aec3e00c184829e2742e466b76eb91ecef4eee5ba98e3",
+      "updated_at": "2025-10-03T06:25:03.987298Z",
+      "doc": {
+        "fileDescription": "Configures a Chrome extension for GitHub directory view enhancements.",
+        "joyThisFileBrings": 8,
+        "personalityEmoji": "⚙️"
+      }
+    },
+    {
+      "kind": "file",
+      "name": "popup.html",
+      "path": "popup.html",
+      "hash": "16d612f2a299c6cf492ecd54c045b05040c653915eee9c8a25dc8f4ab2e600d5",
+      "updated_at": "2025-10-03T06:24:36.247582Z",
+      "doc": {
+        "fileDescription": "Documents the dirdocs Chrome Extension's popup interface.",
+        "joyThisFileBrings": 8,
+        "personalityEmoji": "🤖"
+      }
+    },
+    {
+      "kind": "file",
+      "name": "options.html",
+      "path": "options.html",
+      "hash": "d2316e1c4d72b19ce9668260d54cc90df2a85ac487e376872fd1ca60bb606198",
+      "updated_at": "2025-10-03T06:25:08.300674Z",
+      "doc": {
+        "fileDescription": "Documents the settings and functionality of the dirdocs Chrome extension.",
+        "joyThisFileBrings": 9,
+        "personalityEmoji": "🎮"
+      }
+    },
+    {
+      "kind": "file",
+      "name": "preview.gif",
+      "path": "preview.gif",
+      "hash": "6f5141ab819aa8c128d1459961dc3cf9e0e7045ca9467d54fa770ba6d4365ddc",
+      "updated_at": "2025-10-03T06:24:49.522668Z",
+      "doc": {
+        "fileDescription": "The file contains a preview image of the dirdocs Chrome extension's user interface.",
+        "joyThisFileBrings": 7,
+        "personalityEmoji": "🎨"
+      }
+    },
+    {
+      "kind": "file",
+      "name": "popup.css",
+      "path": "popup.css",
+      "hash": "536cf53faff4254b7e09ef0254da718f39256a87b9f35e6bc9b4265655d8b82f",
+      "updated_at": "2025-10-03T06:25:15.183468Z",
+      "doc": {
+        "fileDescription": "Documents the dirdocs Chrome Extension's stylesheet for a pastel-themed UI.",
+        "joyThisFileBrings": 8,
+        "personalityEmoji": "🎨"
+      }
+    },
+    {
+      "kind": "file",
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "hash": "b7a6a1ef44aa3647db780392b4fa023c613fd9fa482678bb7a729e5fe385ca00",
+      "updated_at": "2025-10-03T06:24:30.284028Z",
+      "doc": {
+        "fileDescription": "Documents the CC0 license for a Chrome extension, granting worldwide rights to use and distribute its content.",
+        "joyThisFileBrings": 8,
+        "personalityEmoji": "📚"
+      }
+    },
+    {
+      "kind": "file",
+      "name": "README.md",
+      "path": "README.md",
+      "hash": "be8bd498a329821d7f610b07504fa968b68a3a5b96075269b9a5f6551064e427",
+      "updated_at": "2025-10-03T06:24:43.650055Z",
+      "doc": {
+        "fileDescription": "Documents a Chrome extension that enhances GitHub directory views with file descriptions.",
+        "joyThisFileBrings": 8,
+        "personalityEmoji": "✨"
+      }
+    }
+  ]
+}
